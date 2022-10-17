@@ -2,7 +2,7 @@
 🌟 APP: Make Netflix
 
 Here we have the Netflix app but it's up to you to make it work by pulling all the movies using an API!
-
+// Add this line
 Create a fetchMovies() function that will make a dynamic API call to what you need 👇
 ========================================
 
