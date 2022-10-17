@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- style & script source -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+
+    
+    <div class="header">
+      <div class="title z-index-2 padding-left-25">
+        <h1>Title</h1>
+      </div>
+      <div class="button-group z-index-2 padding-left-25">
+        <button class="playBtn"><i class="fa-solid fa-play"></i> Play</button>
+        <button class="listBtn">My List</button>
+      </div>
+      <div class="desc z-index-2 padding-left-25">
+        Lorem ipsum dolor sit amet elit. Blanditiis repellendusnon similique
+        vel! Nam tristique magna magna, vit...
+      </div>
+    </div>
+    <div class="content">
+      <div class="netflix-originals">
+        <h2 class="original__header">netflix originals</h2>
+        <div class="original__movies slider"></div>
+      </div>
+      <div class="wishlist">
+        <h2 class="wishlist__header">Wish List</h2>
+        <div id="trending">
+          <h2 class="trending__header">trending now</h2>
+          <div id="trendingEL" class="slider2"></div>
+        </div>
+        <div id="top_rated">
+          <h2 class="top_rated__header">top rated</h2>
+          <div id="top_ratedEL" class="slider2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
