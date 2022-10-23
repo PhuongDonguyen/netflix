@@ -82,7 +82,7 @@ body {
 }
 
 .header .desc {
-  max-width: 420px;
+  width: 420px;
   line-height: 1.5rem;
 }
 
@@ -122,6 +122,22 @@ body {
 
 .slider::-webkit-scrollbar {
   width: 0;
+  height: 5px;
+  background-color: #ccc;
+  transition: all .3s;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(165, 9, 9);
+}
+
+.slider::-webkit-scrollbar:hover {
+  background-color: #fff;
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background-color:#fff;
 }
 
 .slider .item {

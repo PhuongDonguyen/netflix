@@ -5,6 +5,7 @@
 }
 
 body {
+  width: 100vw;
   padding: 0;
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -82,7 +83,7 @@ body {
 }
 
 .header .desc {
-  max-width: 420px;
+  width: 420px;
   line-height: 1.5rem;
 }
 
